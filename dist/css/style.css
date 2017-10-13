@@ -1,0 +1,174 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 14px;
+    line-height: 20px;
+
+    margin: 0;
+}
+
+h1
+{
+    margin: 0 0 20px;
+}
+
+h2
+{
+    margin: 0 0 10px;
+}
+
+.page
+{
+    padding: 20px;
+}
+
+.app-holder
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+
+    margin: 0 0 20px;
+}
+
+.settings
+{
+    line-height: 30px;
+
+    max-width: 500px;
+    margin: 0 0 20px;
+}
+
+.settings > div
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+section
+{
+    margin: 0 20px 0 0;
+}
+
+aside
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.board-holder
+{
+    overflow: hidden;
+
+    border: 1px solid #000;
+}
+
+#board
+{
+    position: relative;
+
+    background: rgba(0, 0, 0, .05);
+}
+
+.cell,
+.figure
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+
+    background: #eee;
+}
+
+.cell:before,
+.figure:before
+{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+
+    content: '';
+
+    border: 1px solid rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .05);
+}
+
+.line
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 10px;
+
+    border-left: 1px solid rgba(0, 0, 0, .05);
+}
+
+.next-box
+{
+    position: relative;
+
+    min-height: 100px;
+}
+
+.button
+{
+    font-size: 14px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    min-width: 30px;
+    padding: 0 10px;
+
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    background: #000;
+}
+
+.button:hover,
+.button:focus,
+.button.active
+{
+    background: #444;
+}
+
+.msg
+{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/style.css"/>
+		<title>Tetris</title>
+	</head>
+	<body>
+		<div class="page">
+			<h1>Tetris</h1>
+			<div class="settings">
+				<h2>Settings:</h2>
+				<div>
+					<div>
+						Cell size:
+						<a class="button cell-increase" href="#">+</a>
+						<a class="button cell-reduce" href="#">-</a>
+					</div>
+					<div>
+						Board width:
+						<a class="button width-increase" href="#">+</a>
+						<a class="button width-reduce" href="#">-</a>
+					</div>
+					<div>
+						Board height:
+						<a class="button height-increase" href="#">+</a>
+						<a class="button height-reduce" href="#">-</a>
+					</div>
+				</div>
+			</div>
+			<div class="app-holder">
+				<section>
+					<div class="board-holder">
+						<div id="board"></div>
+					</div>
+				</section>
+				<aside>
+					<div>
+						<h2>Stats:</h2>
+						<div class="level">Level: <strong>1</strong></div>
+						<div class="score">Score: <strong>0</strong></div>
+					</div>
+					<div>
+						<h2>Next Figure:</h2>
+						<div class="next-box"></div>
+					</div>
+					<div>
+						<a class="button start" href="#">Start</a>
+						<a class="button pause" href="#">Pause</a>
+						<a class="button stop" href="#">Stop</a>
+					</div>
+				</aside>
+			</div>
+			<div class="msg"></div>
+		</div>
+		<script src="../js/global.js"></script>
+	</body>
+</html>
